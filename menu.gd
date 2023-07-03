@@ -15,4 +15,3 @@ func _process(delta):
 func _on_new_game_button_pressed():
 	get_tree().get_root().add_child(simultaneous_scene)
 	get_tree().change_scene_to_file("res://store.tscn")
-	

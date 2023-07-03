@@ -1,26 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://boj2y7j23qm5h"]
+[gd_scene load_steps=2 format=3 uid="uid://v82odxkhnmpp"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_in6lq"]
+[ext_resource type="Script" path="res://menu.gd" id="1_0gqqy"]
 
 [node name="MenuPanel" type="Panel"]
 offset_right = 1152.0
 offset_bottom = 648.0
-script = ExtResource("1_in6lq")
+script = ExtResource("1_0gqqy")
 
 [node name="NewGameButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 520.0
 offset_top = 192.0
-offset_right = 632.0
-offset_bottom = 240.0
+offset_right = 696.0
+offset_bottom = 248.0
 text = "New Game"
-
-[node name="ContinueGameButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 512.0
-offset_top = 264.0
-offset_right = 640.0
-offset_bottom = 312.0
-text = "Continue Game"
 
 [connection signal="pressed" from="NewGameButton" to="." method="_on_new_game_button_pressed"]

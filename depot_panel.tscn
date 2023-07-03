@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://b12tcjj0c7shq"]
+
+[node name="TransportPanel" type="Panel"]
+offset_left = 2.0
+offset_top = 192.0
+offset_right = 1147.0
+offset_bottom = 648.0
+
+[node name="TransportLabel" type="Label" parent="."]
+layout_mode = 2
+offset_left = 441.0
+offset_top = 43.0
+offset_right = 696.0
+offset_bottom = 69.0
+text = "[TRANSPORT]"
+horizontal_alignment = 1
+
+[node name="DepotLabel" type="Label" parent="."]
+layout_mode = 2
+offset_left = 489.0
+offset_top = 178.0
+offset_right = 651.0
+offset_bottom = 204.0
+text = "[DEPOTS]"
+horizontal_alignment = 1
+
+[node name="DriversLabel" type="Label" parent="."]
+layout_mode = 2
+offset_left = 413.0
+offset_top = 282.0
+offset_right = 733.0
+offset_bottom = 308.0
+text = "[DRIVERS]"
+horizontal_alignment = 1
+
+[node name="TransportButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 462.0
+offset_top = 80.0
+offset_right = 669.0
+offset_bottom = 159.0
+text = "Transport Goods"
+
+[node name="DepotButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 445.0
+offset_top = 209.0
+offset_right = 697.0
+offset_bottom = 269.0
+text = "Open Depot"
+
+[node name="HireDriverButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 448.0
+offset_top = 312.0
+offset_right = 697.0
+offset_bottom = 373.0
+text = "Hire Driver"

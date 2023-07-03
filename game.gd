@@ -14,18 +14,19 @@ var transport = 1
 var message = ''
 # Called when the node enters the scene tree for the first time.
 func update_ui():
-	$GoodsLabel.text = "Goods: " + str(goods)
-	$MoneyLabel.text = "Money: " + str(money)
-	$InStoreLabel.text = "In Store: " + str(in_store)
-	$StoresLabel.text = "Stores: " + str(stores)
-	$FactoryLabel.text = "Factories: " + str(factories)
-	$DepotLabel.text = "Depots: " + str(depots)
-	$CashierLabel.text = "Cashiers: " + str(cashiers)
-	$WorkersLabel.text = "Workers: " + str(workers)
-	$DriversLabel.text = "Drivers: " + str(drivers)
-	$TransportLabel.text = "Transport Space: " + str(transport)
-	$Rentlabel.text = "Rent: " + str(rent)
-	$MessageLabel.text = message
+	#$GoodsLabel.text = "Goods: " + str(goods)
+	#$MoneyLabel.text = "Money: " + str(money)
+	#$InStoreLabel.text = "In Store: " + str(in_store)
+	#$StoresLabel.text = "Stores: " + str(stores)
+	#$FactoryLabel.text = "Factories: " + str(factories)
+	#$DepotLabel.text = "Depots: " + str(depots)
+	#$CashierLabel.text = "Cashiers: " + str(cashiers)
+	#$WorkersLabel.text = "Workers: " + str(workers)
+	#$DriversLabel.text = "Drivers: " + str(drivers)
+	#$TransportLabel.text = "Transport Space: " + str(transport)
+	#$Rentlabel.text = "Rent: " + str(rent)
+	#$MessageLabel.text = message
+	pass
 	
 func _ready():
 	update_ui()

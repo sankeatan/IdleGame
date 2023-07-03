@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjvkbxoe6bhmn"]
+
+[ext_resource type="PackedScene" uid="uid://cln2vyrxnosui" path="res://info_panel.tscn" id="2_ov0e5"]
+[ext_resource type="PackedScene" uid="uid://b12tcjj0c7shq" path="res://depot_panel.tscn" id="3_h57uo"]
+[ext_resource type="PackedScene" uid="uid://ceit1l10wdsth" path="res://store_panel.tscn" id="3_mu8la"]
+
+[node name="Panel" type="Panel"]
+offset_right = 1147.0
+offset_bottom = 648.0
+
+[node name="InfoPanel" parent="." instance=ExtResource("2_ov0e5")]
+layout_mode = 0
+
+[node name="StorePanel" parent="." instance=ExtResource("3_mu8la")]
+layout_mode = 0
+offset_top = 195.0
+offset_bottom = 651.0
+
+[node name="TransportPanel" parent="." instance=ExtResource("3_h57uo")]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 191.0
+offset_right = 1148.0
+offset_bottom = 647.0

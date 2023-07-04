@@ -1,12 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjvkbxoe6bhmn"]
+[gd_scene load_steps=9 format=3 uid="uid://cjvkbxoe6bhmn"]
 
+[ext_resource type="Script" path="res://game.gd" id="1_xoa48"]
 [ext_resource type="PackedScene" uid="uid://cln2vyrxnosui" path="res://info_panel.tscn" id="2_ov0e5"]
 [ext_resource type="PackedScene" uid="uid://b12tcjj0c7shq" path="res://depot_panel.tscn" id="3_h57uo"]
 [ext_resource type="PackedScene" uid="uid://ceit1l10wdsth" path="res://store_panel.tscn" id="3_mu8la"]
+[ext_resource type="Script" path="res://store_panel.gd" id="4_puax7"]
+[ext_resource type="PackedScene" uid="uid://cv1thwa77en5x" path="res://manufacturing.tscn" id="5_6l8ue"]
+[ext_resource type="Script" path="res://depot_panel.gd" id="6_2plat"]
+[ext_resource type="Script" path="res://manufacturing.gd" id="8_gu5hx"]
 
-[node name="Panel" type="Panel"]
+[node name="GamePanel" type="Panel"]
 offset_right = 1147.0
 offset_bottom = 648.0
+script = ExtResource("1_xoa48")
 
 [node name="InfoPanel" parent="." instance=ExtResource("2_ov0e5")]
 layout_mode = 0
@@ -15,10 +21,22 @@ layout_mode = 0
 layout_mode = 0
 offset_top = 195.0
 offset_bottom = 651.0
+script = ExtResource("4_puax7")
 
 [node name="TransportPanel" parent="." instance=ExtResource("3_h57uo")]
+visible = false
 layout_mode = 0
 offset_left = 3.0
 offset_top = 191.0
 offset_right = 1148.0
 offset_bottom = 647.0
+script = ExtResource("6_2plat")
+
+[node name="ManufacturingPanel" parent="." instance=ExtResource("5_6l8ue")]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 197.0
+offset_right = 1153.0
+offset_bottom = 646.0
+script = ExtResource("8_gu5hx")

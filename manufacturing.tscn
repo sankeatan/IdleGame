@@ -1,58 +1,60 @@
 [gd_scene format=3 uid="uid://cv1thwa77en5x"]
 
 [node name="ManufacturingPanel" type="Panel"]
-offset_left = 558.0
-offset_top = 192.0
-offset_right = 836.0
-offset_bottom = 648.0
+offset_top = 240.0
+offset_right = 1152.0
+offset_bottom = 640.0
+metadata/_edit_horizontal_guides_ = [424.0]
 
 [node name="GoodsLabel" type="Label" parent="."]
 layout_mode = 2
-offset_left = -464.0
-offset_top = 216.0
-offset_right = -144.0
-offset_bottom = 242.0
+offset_left = 448.0
+offset_top = 32.0
+offset_right = 712.0
+offset_bottom = 58.0
 text = "[GOODS]"
 horizontal_alignment = 1
 
 [node name="WorkersLabel" type="Label" parent="."]
 layout_mode = 2
-offset_left = -352.0
-offset_top = 176.0
-offset_right = -32.0
-offset_bottom = 202.0
+offset_left = 424.0
+offset_top = 272.0
+offset_right = 744.0
+offset_bottom = 298.0
 text = "[WORKERS]"
+horizontal_alignment = 1
 
 [node name="FactoryLabel" type="Label" parent="."]
 layout_mode = 2
-offset_left = -464.0
-offset_top = 152.0
-offset_right = -144.0
-offset_bottom = 178.0
+offset_left = 424.0
+offset_top = 176.0
+offset_right = 744.0
+offset_bottom = 202.0
 text = "[FACTORY]"
+horizontal_alignment = 1
 
 [node name="CreateGoodsButton" type="Button" parent="."]
 layout_mode = 2
-offset_left = -152.0
-offset_top = -488.0
-offset_right = 168.0
-offset_bottom = -168.0
+offset_left = 472.0
+offset_top = 72.0
+offset_right = 696.0
+offset_bottom = 152.0
 text = "Create Goods"
 
 [node name="HireWorkerButton" type="Button" parent="."]
 layout_mode = 2
-offset_left = 216.0
-offset_top = -144.0
-offset_right = 536.0
-offset_bottom = 176.0
+offset_left = 496.0
+offset_top = 298.0
+offset_right = 672.0
+offset_bottom = 354.0
 text = "Hire Worker
 "
 
 [node name="OpenFactoryButton" type="Button" parent="."]
 layout_mode = 2
-offset_left = -104.0
-offset_top = -192.0
-offset_right = 216.0
-offset_bottom = 128.0
+offset_left = 496.0
+offset_top = 216.0
+offset_right = 672.0
+offset_bottom = 272.0
 text = "Open Factory
 "

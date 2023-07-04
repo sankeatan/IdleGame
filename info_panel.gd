@@ -2,6 +2,11 @@ extends Panel
 var store = preload("res://store_panel.tscn").instantiate()
 var depot = preload("res://depot_panel.tscn").instantiate()
 var factory = preload("res://manufacturing.tscn").instantiate()
+
+var money = 10
+var rent = 0
+var message = ''
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass

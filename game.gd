@@ -1,18 +1,6 @@
 extends Panel
 
-var goods = 0
-var in_store = 0
-var money = 10
-var stores = 0
-var factories = 0
-var depots = 0
-var cashiers = 0
-var workers = 0
-var drivers = 0
-var rent = 0
-var transport = 1
-var message = ''
-# Called when the node enters the scene tree for the first time.
+
 func update_ui():
 	#$GoodsLabel.text = "Goods: " + str(goods)
 	#$MoneyLabel.text = "Money: " + str(money)
@@ -37,29 +25,9 @@ func _process(delta):
 	pass
 
 
-func _on_create_goods_button_pressed():
-	if money <= 0:
-		update_message("Not enough money!")
-	elif factories > 0:
-		money = money - (1 + workers)
-		goods = goods + (1+(factories*workers))
-		update_ui()
-	else:
-		money-=1
-		goods+=1
-		update_ui()
 
-func _on_sell_goods_button_pressed():
-	if in_store <= 0:
-		update_message("No goods in store!")
-	elif stores > 0:
-		money = money + (3+(cashiers*stores))
-		in_store-=1
-		update_ui()
-	else:
-		money = money + 3
-		in_store-=1
-		update_ui()
+
+
 
 func _on_transport_button_pressed():
 	if goods <= 0:

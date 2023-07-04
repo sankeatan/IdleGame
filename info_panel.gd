@@ -35,3 +35,20 @@ func _on_manufacturing_button_pressed():
 func _on_gathering_button_pressed():
 	get_tree().get_root().add_child(store)
 	get_tree().change_scene_to_file("res://store_panel.tscn")
+	
+
+func _on_rent_timer_timeout():
+	money = money - rent
+	update_ui()
+	
+func update_message(msg):
+	message = msg
+	$MessageTimer.start()
+	update_ui()
+	
+func _on_message_timer_timeout():
+	message = ''
+	update_ui()
+
+func update_ui():
+	pass

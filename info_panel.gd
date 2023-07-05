@@ -3,19 +3,19 @@ var store = preload("res://store_panel.tscn").instantiate()
 var depot = preload("res://depot_panel.tscn").instantiate()
 var factory = preload("res://manufacturing.tscn").instantiate()
 
-var money = 10
-var rent = 0
-var message = ''
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	update_ui()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
+func update_ui():
+	$MoneyLabel.text = "Money: " + str(Game.money)
+	$RentLabel.text = "Rent: " + str(Game.rent)
+	$MessageLabel.text = ""
 
 func _on_store_button_pressed():
 	get_tree().get_root().add_child(store)
@@ -38,17 +38,16 @@ func _on_gathering_button_pressed():
 	
 
 func _on_rent_timer_timeout():
-	money = money - rent
+	Game.money = Game.money - Game.rent
 	update_ui()
 	
 func update_message(msg):
-	message = msg
+	Game.message = msg
 	$MessageTimer.start()
 	update_ui()
 	
 func _on_message_timer_timeout():
-	message = ''
+	Game.message = ''
 	update_ui()
 
-func update_ui():
-	pass
+	

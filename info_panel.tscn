@@ -16,7 +16,7 @@ offset_bottom = 98.0
 text = "[MONEY]"
 horizontal_alignment = 1
 
-[node name="Rentlabel" type="Label" parent="."]
+[node name="RentLabel" type="Label" parent="."]
 layout_mode = 2
 offset_left = 656.0
 offset_top = 72.0

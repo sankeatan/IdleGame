@@ -1,9 +1,12 @@
-[gd_scene format=3 uid="uid://cv1thwa77en5x"]
+[gd_scene load_steps=2 format=3 uid="uid://cv1thwa77en5x"]
+
+[ext_resource type="Script" path="res://manufacturing.gd" id="1_rug1t"]
 
 [node name="ManufacturingPanel" type="Panel"]
 offset_top = 240.0
 offset_right = 1152.0
 offset_bottom = 640.0
+script = ExtResource("1_rug1t")
 metadata/_edit_horizontal_guides_ = [424.0]
 
 [node name="GoodsLabel" type="Label" parent="."]

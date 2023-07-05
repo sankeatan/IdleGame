@@ -1,10 +1,13 @@
-[gd_scene format=3 uid="uid://b12tcjj0c7shq"]
+[gd_scene load_steps=2 format=3 uid="uid://b12tcjj0c7shq"]
 
-[node name="TransportPanel" type="Panel"]
+[ext_resource type="Script" path="res://depot_panel.gd" id="1_pc1ab"]
+
+[node name="DepotPanel" type="Panel"]
 offset_left = 2.0
 offset_top = 192.0
 offset_right = 1147.0
 offset_bottom = 648.0
+script = ExtResource("1_pc1ab")
 
 [node name="TransportLabel" type="Label" parent="."]
 layout_mode = 2
